@@ -1,0 +1,31 @@
+# Ignore .git and .vscode directories
+.git
+.vscode
+
+# Ignore cache directories
+__pycache__
+*.py[cod]
+
+# Ignore test and documentation directories
+tests/
+docs/
+
+# Ignore log files
+*.log
+
+# Ignore all .env files
+*.env
+
+# Ignore Python compiled files
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook files
+*.ipynb
+
+# Ignore Mac system files
+.DS_Store

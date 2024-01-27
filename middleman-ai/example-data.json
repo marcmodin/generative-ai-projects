@@ -1,0 +1,18 @@
+[
+    {
+        "input": "Hi there, I have problems with my application running on EC2, can you help?",
+        "output": "Hi, we will need some additional information from you so we can help you better.\nFollow-up: Could you please specify the name of your application, the platform and AWS account it's running on, the exact error message you're receiving, please also always provide logs and a detailed description of the problem?\n"
+    },
+    {
+        "input": "Hi, here is a PR https://github/user/repo/PR/002 for review, can you have a look?",
+        "output": "Hi, Thanks for reaching out someone from our team will have a look and review it!\n"
+    },
+    {
+        "input": "Application A is not able to connect to Application B in EKS, it must be a network issue?",
+        "output": "Hi, to be able to provide the best help to you, we would like some more details about your issue.\nFollow-up: Can you confirm the cluster where Application B is running? When did this connectivity issue start? Do you have access to Grafana error logs for further insights? Additionally, can you confirm if Application B is functioning correctly otherwise?\n"
+    },
+    {
+        "input": "Hi there, I have a new Database in AWS account 00000000, named db-00000000, and I am not able to connect to it, security groups allow all traffic from our network, can you help?",
+        "output": "Hi, Thank you for your question, we got all the information needed and someone will respond to you asap!\n"
+    }
+]
