@@ -1,16 +1,25 @@
-FROM python:3.11-bullseye
+FROM python:3.11-bullseye AS build
+# Create the virtual environment.
+RUN python -m venv /venv
+ENV PATH=/venv/bin:$PATH
 
-# RUN apk add --no-cache --virtual .build-deps gcc musl-dev cmake
-# Set the working directory in the container to /app
+# Install Python dependencies
 WORKDIR /app
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
 
-# Add the current directory contents into the container at /app
-ADD . /app
+FROM python:3.11-slim-bullseye
+# Copy the virtual environment from the first stage.
+COPY --from=build /venv /venv
+ENV PATH=/venv/bin:$PATH
 
-RUN pip install -r requirements.txt
+# Copy in the application (if it wasn't `pip install`ed into the venv)
+WORKDIR /app
+# Copy the application in.
+COPY *.py .
 
 # Make port 8501 available to the world outside this container
 EXPOSE 8501
-
 # Run the command to start the Streamlit server
 CMD ["python", "-m", "streamlit", "run", "main.py"]
+
