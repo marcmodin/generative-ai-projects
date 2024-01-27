@@ -16,7 +16,7 @@ ENV PATH=/venv/bin:$PATH
 # Copy in the application (if it wasn't `pip install`ed into the venv)
 WORKDIR /app
 # Copy the application in.
-COPY *.py .
+COPY *.py *.json ./
 
 # Make port 8501 available to the world outside this container
 EXPOSE 8501
