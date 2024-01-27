@@ -29,3 +29,7 @@ docker run --rm -v ~/.aws:/root/.aws:ro middleman:latest
 # note that you will also need to pass in your AWS credentials somehow
 # we did it here by passing in our .aws directory
 ```
+
+### Screenshot
+
+![Application Screenshot](./screenshot.png)
