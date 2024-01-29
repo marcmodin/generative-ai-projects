@@ -132,7 +132,7 @@ if __name__ == "__main__":
     try:
 
         index = 1  # Change this to the index of the question you want to use
-        question = sample_questions[index]
+        question = SampleQuestions[index]
 
         answer = CallBedrockChain(question_input=question)
         # answer = CallRenderPrompt(question_input=question)
