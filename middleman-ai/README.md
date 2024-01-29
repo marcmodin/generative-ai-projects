@@ -1,6 +1,6 @@
 # Middleman Project
 
-This is a Streamlit application that allows users to interact with a chat interface. Users can submit questions, and the application will generate responses. The application also includes a feature to clear the chat history.
+This is a Streamlit application that allows users to interact with a Bedrock chat interface using the Claude V2 model. Users can submit questions, and the application will generate responses. The application also includes a feature to clear the chat history.
 
 ## Local Development
 
