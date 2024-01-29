@@ -16,6 +16,9 @@ Or you can simply build the **Dockerfile** `docker build -t middleman .` and run
 
 ## Running the Application Locally
 
+1. Make sure you have logged in to an AWS account that has access to the ClaudeV2 model in Bedrock.
+2. Export your active `AWS_PROFILE` for that account along with `AWS_REGION` in your terminal.
+
 You can run the application locally using the following command:
 
 ```bash
