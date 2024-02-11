@@ -1,0 +1,7 @@
+langchain
+langchainhub
+langsmith
+python-dotenv
+chromadb
+pypdf
+boto3
