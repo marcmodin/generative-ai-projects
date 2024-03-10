@@ -54,3 +54,8 @@ To set up a virtual environment and install the required packages, follow these 
 This platform provides very useful information about our langchain applications which can be used to improve it further.
 
 ![langsmith dashboard](langsmith.png)
+
+
+### Sample Data Sources
+
+- [gen-ai-wiki.pdf](https://github.com/aws-samples/generative-ai-demo-using-amazon-sagemaker-jumpstart-kr/blob/main/blogs/Llama2-chatbot-with-vector-store/gen-ai-wiki.pdf)
