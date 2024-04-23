@@ -1,0 +1,8 @@
+langchain
+langchainhub
+langsmith
+python-dotenv
+chromadb
+boto3
+tiktoken
+unstructured[md]
